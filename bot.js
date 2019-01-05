@@ -60,8 +60,6 @@ r/inv
 The steps of the role did not worked .!!// Toxic Codes
 1- Place the role of the Rainbow above the colors or colored ranks if it
 2- Put the bot role above the role of the Rainbow // Toxic Codes
-رآبط البوت - Bot Invite link// Toxic Codes
-- 
 **`)// Toxic Codes
   }})
    client.on('message', message => {
@@ -70,7 +68,7 @@ The steps of the role did not worked .!!// Toxic Codes
                  message.react('🌈')// Toxic Codes// Toxic Codes
 		   var embed = new Discord.RichEmbed()
 		   .setTitle(">> ClickHere To Add" + `${client.user.username}` + " <<")// Toxic Codes// Toxic Codes// Toxic Codes
-		   .setURL("https://discordapp.com/oauth2/authorize?client_id=" + `${client.user.id}` + "&scope=bot&permissions=2080374975")// Toxic Codes
+		   .setURL("https://discordapp.com/oauth2/authorize?client_id=" + `${client.user.id}` + "&scope=bot&permissions=8")// Toxic Codes
 		   .setTimestamp()// Toxic Codes// Toxic Codes// Toxic Codes// Toxic Codes
 		   .setFooter(`Requested By | ${message.author.username}`)// Toxic Codes
 		   .setColor("RANDOM")
