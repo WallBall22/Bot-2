@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
 const suck = JSON.parse(fs.readFileSync('./suck.json', 'utf8'));
-const prefix = "r#";
+const prefix = "r/";
 // Toxic Codes
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("Rainbow , r#help .",{type: 'WATCHING'});
+          client.user.setActivity("RainbowBot | r/help",{type: 'PLAYING'});
   
   });// Toxic Codes
 client.on("message", message => {
@@ -47,10 +47,10 @@ client.on("message", message => {
   if (message.content === "r#help") {
       message.react('🌈')
 message.author.send(`**
-r#set 
+r/set 
  - لإنشاء رتبة الرينبو وبدا الرينبو
 - To create the role of the Rainbow & Start The Rainbow
-r#inv 
+r/inv 
 - لدعوة البوت
 - To Invite the bot
 // Toxic Codes// Toxic Codes// Toxic Codes
@@ -61,11 +61,11 @@ The steps of the role did not worked .!!// Toxic Codes
 1- Place the role of the Rainbow above the colors or colored ranks if it
 2- Put the bot role above the role of the Rainbow // Toxic Codes
 رآبط البوت - Bot Invite link// Toxic Codes
-- http://cutt.us/RainbowBott
+- 
 **`)// Toxic Codes
   }})
    client.on('message', message => {
-	   if(message.content.startsWith(`r#inv`)){
+	   if(message.content.startsWith(`r/inv`)){
 		   if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
                  message.react('🌈')// Toxic Codes// Toxic Codes
 		   var embed = new Discord.RichEmbed()
