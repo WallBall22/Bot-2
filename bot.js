@@ -37,14 +37,14 @@ client.on("message", message => {
     switch(command) {
         case "set" :
         if(!message.member.hasPermission('ADMINSTRATOR')) return message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINSTRATOR`' );
-        message.guild.createRole({name : "RainbowBot .", color : "RANDOM"}).then(r => {// Toxic Codes
+        message.guild.createRole({name : "Rainbow", color : "RANDOM"}).then(r => {// Toxic Codes
             r.edit({color : "RANDOM"});
             suck[message.guild.id] = {role : r.id};// Toxic Codes
         });// Toxic Codes
     };// Toxic Codes
 });// Toxic Codes
 client.on("message", message => {
-  if (message.content === "r#help") {
+  if (message.content === "r/help") {
       message.react('🌈')
 message.author.send(`**
 r/set 
